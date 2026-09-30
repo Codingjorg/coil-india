@@ -48,3 +48,6 @@ main {
 }
 h1 { font-weight: 600; margin: 0 0 var(--space); }
 p { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); }
+h2 { font-weight: 600; margin: calc(2 * var(--space)) 0 var(--space); }
+ul { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); padding: 0; list-style-position: inside; }
+hr { border: 0; border-top: 1px solid #444; margin: var(--space) 0; }

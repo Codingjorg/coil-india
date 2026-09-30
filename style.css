@@ -51,3 +51,12 @@ p { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); }
 h2 { font-weight: 600; margin: calc(2 * var(--space)) 0 var(--space); }
 ul { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); padding: 0; list-style-position: inside; }
 hr { border: 0; border-top: 1px solid #444; margin: var(--space) 0; }
+
+nav { margin: 0 0 var(--space); }
+nav a { color: #8ab4ff; }
+details.profile { text-align: left; margin: 0 0 var(--space); border: 1px solid #444; border-radius: 6px; padding: 0 var(--space); }
+details.profile summary { padding: var(--space) 0; font-weight: 600; }
+details.profile table { border-collapse: collapse; width: 100%; margin-bottom: var(--space); color: #aaa; line-height: 1.5; }
+details.profile th, details.profile td { border: 1px solid #444; padding: 8px; vertical-align: top; text-align: left; }
+details.profile th { color: #eee; }
+details.profile td strong { color: #eee; }

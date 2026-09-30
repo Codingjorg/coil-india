@@ -1,7 +1,7 @@
 :root {
   --space: 16px;
   --flag-col: 9vw;
-  --flag-cursor: url("flags/india-cursor.png") 20 13, auto;
+  --flag-cursor: url("flags/india-cursor.png") 0 0, auto;
 }
 
 html, body, * { cursor: var(--flag-cursor); }

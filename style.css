@@ -46,7 +46,7 @@ main {
   box-sizing: border-box;
   text-align: center;
 }
-h1 { font-weight: 600; margin: 0 0 var(--space); }
+h1 { font-weight: 800; font-size: clamp(4rem, 15vw, 12rem); line-height: 1; letter-spacing: 0.05em; text-align: center; margin: 0 0 calc(2 * var(--space)); }
 p { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); }
 h2 { font-weight: 600; margin: calc(2 * var(--space)) 0 var(--space); }
 ul { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); padding: 0; list-style-position: inside; }

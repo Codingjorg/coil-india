@@ -1,0 +1,50 @@
+:root {
+  --space: 16px;
+  --flag-col: 9vw;
+  --flag-cursor: url("flags/india.svg") 15 10, auto;
+}
+
+html, body, * { cursor: var(--flag-cursor); }
+
+html { background: #111; }
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  color: #eee;
+  font-family: system-ui, sans-serif;
+}
+
+/* Flag columns at each horizontal edge; flag images are inserted by script.js. */
+.flags {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--flag-col);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  padding: var(--space) 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.flags--left  { left: 0; }
+.flags--right { right: 0; }
+.flags img { display: block; width: 100%; height: auto; flex: none; }
+/* Reserve height before the image loads so the fill loop can measure. */
+.flags img[src$="india.svg"]  { aspect-ratio: 3 / 2; }
+.flags img[src$="norway.svg"] { aspect-ratio: 22 / 16; }
+
+main {
+  width: calc(100vw - 2 * (var(--flag-col) + 15vw));
+  padding: var(--space);
+  box-sizing: border-box;
+  text-align: center;
+}
+h1 { font-weight: 600; margin: 0 0 var(--space); }
+p { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); }

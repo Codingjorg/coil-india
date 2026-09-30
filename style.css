@@ -53,7 +53,7 @@ ul { color: #aaa; line-height: 1.7; margin: 0 0 var(--space); padding: 0; list-s
 hr { border: 0; border-top: 1px solid #444; margin: var(--space) 0; }
 
 nav { margin: 0 0 var(--space); }
-nav a { color: #eee; text-decoration: underline; }
+nav a, nav a:link, nav a:visited, nav a:hover, nav a:active { color: #eee; text-decoration: underline; text-decoration-color: #eee; }
 details.profile { text-align: left; margin: 0 0 var(--space); border: 1px solid #444; border-radius: 6px; padding: 0 var(--space); }
 details.profile summary { padding: var(--space) 0; font-weight: 600; }
 details.profile table { border-collapse: collapse; width: 100%; margin-bottom: var(--space); color: #aaa; line-height: 1.5; }

@@ -1,5 +1,5 @@
 // Fill both side columns with alternating India / Norway flag images.
-const FLAGS = ["flags/india.svg", "flags/norway.svg"];
+const FLAGS = ["flags/india.png", "flags/norway.png"];
 
 function fillColumn(column) {
   column.replaceChildren();

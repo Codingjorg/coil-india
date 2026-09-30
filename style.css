@@ -1,7 +1,7 @@
 :root {
   --space: 16px;
   --flag-col: 9vw;
-  --flag-cursor: url("flags/india.svg") 15 10, auto;
+  --flag-cursor: url("flags/india-cursor.png") 20 13, auto;
 }
 
 html, body, * { cursor: var(--flag-cursor); }
@@ -37,8 +37,8 @@ body {
 .flags--right { right: 0; }
 .flags img { display: block; width: 100%; height: auto; flex: none; }
 /* Reserve height before the image loads so the fill loop can measure. */
-.flags img[src$="india.svg"]  { aspect-ratio: 3 / 2; }
-.flags img[src$="norway.svg"] { aspect-ratio: 22 / 16; }
+.flags img[src$="india.png"]  { aspect-ratio: 320 / 213; }
+.flags img[src$="norway.png"] { aspect-ratio: 320 / 233; }
 
 main {
   width: calc(100vw - 2 * (var(--flag-col) + 15vw));
